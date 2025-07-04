@@ -1,0 +1,7 @@
+61. Crie as classes Equipamento e Computador, cada uma com dois atributos privados à
+ sua escolha. Além disso, a classe Computador deverá herdar os métodos e atributos
+ da classe Equipamento. Escreva métodos de acesso, get’s e set’s, para os atributos
+ definidos em ambas as classes. Cada classe também deve ter um método toString.
+ Lembre-se que o método toString de Computador também deve representar os atributos
+ herdados. Por fim, crie uma classe executável, TestaEquipamento, para instanciar um
+ objeto de cada classe, inicializar seus atributos e imprimí-los.
