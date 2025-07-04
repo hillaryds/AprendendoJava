@@ -1,0 +1,10 @@
+
+
+ 71. Explique por que não podemoster construtores declarados com a palavra-chave abstract.
+
+
+Um construtor é chamado quando um objeto é criado. Ele serve para inicializar o estado do objeto.
+Uma classe ou método abstract não pode ser instanciado diretamente; ela serve como modelo para outras classes.
+Se você tentasse declarar um construtor como abstract, isso não faria sentido, 
+porque um construtor precisa estar completo e funcional para que a criação do objeto aconteça. 
+E métodos abstract não possuem implementação — são apenas a "assinatura".
