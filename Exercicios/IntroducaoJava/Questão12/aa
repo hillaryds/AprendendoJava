@@ -1,0 +1,41 @@
+/*Escreva um programa que lê dois pontos no plano cartesiano com coordenadas x e y e
+informa se o segundo ponto está acima, abaixo, à esquerda e/ou à direita do primeiro.
+*/
+
+import java.util.Scanner;
+
+public class PlanoCartesiano{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê as coordenadas do primeiro ponto
+        System.out.print("Digite o x do primeiro ponto: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("Digite o y do primeiro ponto: ");
+        double y1 = scanner.nextDouble();
+
+        // Lê as coordenadas do segundo ponto
+        System.out.print("Digite o x do segundo ponto: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("Digite o y do segundo ponto: ");
+        double y2 = scanner.nextDouble();
+
+        // Verifica a posição do segundo ponto em relação ao primeiro
+        if (y2 > y1) {
+            System.out.println("O segundo ponto está acima do primeiro.");
+        } else if (y2 < y1) {
+            System.out.println("O segundo ponto está abaixo do primeiro.");
+        }
+
+        if (x2 > x1) {
+            System.out.println("O segundo ponto está à direita do primeiro.");
+        } else if (x2 < x1) {
+            System.out.println("O segundo ponto está à esquerda do primeiro.");
+        }
+
+        if (x2 == x1 && y2 == y1) {
+            System.out.println("Os pontos são coincidentes.");
+        }
+        scanner.close();
+    }
+}
