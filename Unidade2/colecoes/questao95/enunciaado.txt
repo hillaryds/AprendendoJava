@@ -1,0 +1,13 @@
+ 95. Escreva um programa que utilize uma pilha para verificar se uma String de entrada for
+mada apenas por ’(’ e ’)’ está balanceada.
+ É proibido utilizar contador(es) na solução desta questão.
+ Os parênteses estão balanceados quando, na expressão, para cada abre parênteses há
+ um correspondente fecha parênteses e os pares de parênteses estão aninhados.
+ Exemplos de Strings de parênteses corretamente balanceadas:
+ (()()()())
+ (((())))
+ (()((())()))
+ Exemplos de Strings de parênteses não são balanceadas:
+ ((((((())
+ ()))
+ (()()(()
