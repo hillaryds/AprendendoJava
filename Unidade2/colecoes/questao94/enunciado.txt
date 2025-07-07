@@ -1,0 +1,6 @@
+Escreva um programa que utilize a estrutura de dados do tipo Mapa para contar o número
+ de ocorrências de cada letra em uma String. Por exemplo, a string "HELLO THERE"
+ contém dois H’s, três E’s, dois L’s, um O , um T e um R. Exiba os resultados em ordem
+ alfabética.
+ • Serão totalmente desconsideradas respostas que não utilizarem um Mapa como
+ elemento principal da estratégia de solução desta questão
