@@ -1,0 +1,8 @@
+ 102. Faça um programa para somar dois números:
+ • O programa deve conter um método int obterIntValido() para receber um número
+ inteiro válido– Enquanto o valor não for um número inteiro, deve-se solicitar um novo número e
+ exibir uma mensagem de erro.
+ • Ométodoprincipal deve utilizar obterIntValido() para obter os dois operandos e apre
+sentar a soma deles
+ • Éobrigatório o uso de tratamento de exceção para realizar esta questão. Respostas
+ que não utilizarem essa técnica serão completamente desconsideradas
