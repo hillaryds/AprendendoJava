@@ -1,0 +1,8 @@
+Crie uma classe Desenho que possui dois atributos do tipo FiguraGeometrica (criado na
+ questão anterior) e suas respectivas coordenadas em um plano bidimensional. Escreva
+ um construtor para a classe Desenho que inicialize todos os atributos através dos pa
+râmetros. Implemente também o método apresenta() que, para cada FiguraGeometrica
+ em umDesenho, informa suas coordenadas e imprime sua descrição. Por fim, crie uma
+ classe executável, Principal, que cria dois objetos do tipo Desenho e chama seu meu mé
+todo apresenta. O primeiro Desenho deve ser formado por um Circulo e um Quadrado e
+ o segundo por um Quadrado e um Triangulo.
