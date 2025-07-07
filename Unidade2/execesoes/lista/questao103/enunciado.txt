@@ -1,0 +1,5 @@
+ 103. Escreva um programa que:
+ • armazene em um vetor os nomes dos meses do ano
+ • solicite ao usuário que digite um valor inteiro
+ • mostre o nome do mês correspondente ao número digitado
+ • trate as exceções geradas pela digitação de valores inválidos para o índice do mês
