@@ -1,0 +1,13 @@
+ Escreva um programa que simule cada minuto de um dia de atendimento de um consul
+tório de um médico com as seguintes especificações:
+ • Oconsultório mantém apenas dados número de RG e idade de seus pacientes;
+ (i) Crie uma classe para representar um paciente.
+ • Pacientes maiores de 60 anos são colocados na fila prioritária e os demais na fila
+ comum;
+ • Pacientes da fila prioritária são sempre atendidos primeiro;
+ • O primeiro paciente chega ao consultório no momento de sua abertura e a cada 4
+ minutos um novo paciente chega ao consultório;
+ (i) Pesquise como gerar números aleatórios e utilize essa técnica para determinar
+ o RGeaidade de cada paciente.
+ • Umaconsulta demora 5 minutos e o próximo paciente da fila é chamado;
+ • Oconsultório atende 20 pacientes por dia.
