@@ -30,13 +30,7 @@ public class SomadorComTratamentoExcecao {
         return numero;
     }
     
-    /**
-     * Método principal que utiliza obterIntValido() para obter dois operandos
-     * e apresenta a soma deles
-     */
     public static void main(String[] args) {
-        System.out.println("=== PROGRAMA SOMADOR COM TRATAMENTO DE EXCEÇÕES ===");
-        System.out.println("Este programa soma dois números inteiros.");
         System.out.println("Digite apenas números inteiros válidos.\n");
         
         try {
