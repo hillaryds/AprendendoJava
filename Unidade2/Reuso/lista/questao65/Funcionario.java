@@ -14,7 +14,7 @@ public class Funcionario{
         this.salario += aumento;
     }
 
-     public Double ganhoAnual() {
+     public double ganhoAnual() {
         return salario * 13;
     }
 

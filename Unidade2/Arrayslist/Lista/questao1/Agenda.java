@@ -20,30 +20,27 @@ public class Agenda {
         this.historico = new ArrayList<>();
     }
 
-    public void novoCompromisso(int d, int m, int a, int h, String ass){
-        if( h >= 0 && h < 24 && m < 13 && m > 0 && a >= 2025){
-            EntradaEmAgenda novoC = new EntradaEmAgenda(h, d, m, a, ass);
-            historico.add(novoC);
-        }
-        else{
-            System.out.println("Seu compromisso nao pode ser adicionado. Tente novamente");
-        }
+    public void novoCompromisso(String h, int d, int m, int a, String ass){
+        EntradaEmAgenda novoC = new EntradaEmAgenda(h, d, m, a, ass);
+        historico.add(novoC);
     }
 
 
     public void listaDia(int d, int m, int a) {
-        System.out.println("=== Historico do dia ===");
-        for (EntradaEmAgenda assunto : historico) {
-            if (assunto.ehNoDia( d, m, a)){
-                System.out.println(assunto);
+        System.out.println("=== Compromissos do dia " + d + "/" + m + "/" + a + " ===");
+        boolean encontrou = false;
+        
+        for (EntradaEmAgenda entrada : historico) {
+            if (entrada.ehNoDia(d, m, a)){
+                System.out.println(entrada);
+                encontrou = true;
             }
         }
-        System.out.println("=======================");
+        
+        if (!encontrou) {
+            System.out.println("Nenhum compromisso encontrado para esta data.");
+        }
+        
+        System.out.println("==========================================");
     }
-
-
-
-    
-
-    
 }

@@ -16,7 +16,7 @@ public class Tecnico extends Assistente {
         this.bonus = bonus;
     }
 
-    public Double ganhoAnual() {
+    public double ganhoAnual() {
         // 13 salários + bônus anual
         return super.ganhoAnual() + bonus;
     }

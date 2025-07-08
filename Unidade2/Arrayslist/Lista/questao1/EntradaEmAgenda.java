@@ -20,13 +20,13 @@ missos e, usando o método listaDia, liste as entradas da agenda que tem a mesma
 
 
 public class EntradaEmAgenda{
-    private int hora;
+    private String hora; // Mudança: hora como String para permitir formato "HH:MM"
     private int dia;
     private int mes;
     private int ano;
     private String assunto;
 
-    EntradaEmAgenda(int h, int d, int m, int a, String ass){
+    public EntradaEmAgenda(String h, int d, int m, int a, String ass){
         this.hora = h;
         this.dia = d;
         this.mes = m;
@@ -35,10 +35,10 @@ public class EntradaEmAgenda{
     }
 
     public String toString(){
-        return "Às " + hora + " de " + dia + "/" + mes + "/" + ano + " Compromisso: " + assunto;
+        return "Às " + hora + " do dia " + dia + "/" + mes + "/" + ano + " - Compromisso: " + assunto;
     }
 
-    public Boolean ehNoDia(int d, int m, int a){
+    public boolean ehNoDia(int d, int m, int a){
         if( d == this.dia && m == this.mes && a == this.ano){
             return true;
         }

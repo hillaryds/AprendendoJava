@@ -5,10 +5,10 @@
  demonstre as capacidades da classe criada.*/
 package Arrayslist.Lista.questao2;
 public class Matriz{
-    private float [][] matriz2x2;
+    private float [][] matriz2x2 = new float[2][2];
 
     Matriz(float p, float s, float t, float q){
-        matriz2x2 = new float[2][2];
+        // matriz2x2 = new float[2][2];
         matriz2x2[0][0] = p;
         matriz2x2[0][1] = s;
         matriz2x2[1][0] = t;

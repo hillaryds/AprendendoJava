@@ -13,13 +13,12 @@ public class Dados{
     public static void main(String[]args){
         Random random = new Random();
         int [] frequencias = new int[13]; //indice de 0 a 12
-        int lancamentos = 100;
+        int lancamentos = 36_000_000;
 
         for (int i = 0; i < lancamentos; i++){
             int dado1 = 1 + random.nextInt(6);
             int dado2 = 1 + random.nextInt(6);
-            int soma = dado1 + dado2;
-            frequencias[soma]++;
+            frequencias[dado1 + dado2]++;
         }
 
         System.out.println("Soma\tFrequencia");

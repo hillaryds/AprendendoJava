@@ -26,7 +26,7 @@ public class Administrativo extends Assistente {
         this.adicionalNoturno = adicionalNoturno;
     }
 
-    public Double ganhoAnual() {
+    public double ganhoAnual() {
         // Adicional noturno só para 12 salários, não para o 13º
         if (turno.equalsIgnoreCase("noite")) {
             return (getSalario() + adicionalNoturno) * 12 + getSalario();
