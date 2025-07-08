@@ -1,6 +1,5 @@
 package execesoes.lista.questao103;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MesesDoAno {
@@ -30,24 +29,14 @@ public class MesesDoAno {
                     System.out.println(" Saindo do programa...");
                     continuar = false;
                     continue;
+
                 }
                 
-                // Tenta acessar o mês no vetor
-                // Subtrai 1 porque o vetor começa em índice 0, mas os meses são 1-12
                 String nomeMes = meses[numeroMes - 1];
                 
                 System.out.println(" Mês " + numeroMes + ": " + nomeMes);
                 System.out.println();
                 
-            } catch (InputMismatchException e) {
-                System.out.println(" ERRO: Entrada inválida! Por favor, digite apenas números inteiros.");
-                scanner.nextLine(); // Limpa o buffer do scanner
-                System.out.println();
-                
-            } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println(" ERRO: Número do mês inválido! Digite um número entre 1 e 12.");
-                System.out.println("   Índice inválido: " + e.getMessage());
-                System.out.println();
                 
             } catch (Exception e) {
                 System.out.println(" ERRO INESPERADO: " + e.getClass().getSimpleName() + 
